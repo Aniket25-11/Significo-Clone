@@ -1,0 +1,78 @@
+:root{
+  --salmon: #EF9d71;
+  --black: #000;
+  --white: #fff;
+  --cyan: #80becc;
+  --dsalmon: #532521;
+  --dcyan: #1f2f32;
+
+}
+*::selection{
+  background-color: var(--salmon);
+}
+.vidioDiv{
+  clip-path: circle(var(--clip) at 50% 50%);
+}
+body{
+  transition: background-color ease-out 0.5s;
+}
+body[theme="black"]{
+  background-color: var(--black);
+}
+body[theme="black"] .section{
+  color: var(--white);
+}
+body[theme="cyan"]{
+  background-color: var(--cyan);
+}
+body[theme="cyan"] .section{
+color: var(--dcyan);
+}
+body[theme="salmon"]{
+  background-color: var(--salmon);
+}
+body[theme="salmon"] .section{
+  color: var(--dsalmon);
+}
+body[theme="white"]{
+  background-color: var(--white);
+}
+body[theme="white"] .section{
+  color: var(--black);
+}
+#circleText {
+  position: absolute;
+  white-space: nowrap;
+  transform-origin: center;
+}
+
+/* nav {
+  transition: background-color 0.3s ease, color 0.3s ease;
+  background-color: #000000; 
+  color: #FFFFFF; 
+}
+nav a {
+  transition: color 0.3s ease;
+} */
+
+nav {
+  background-color: #000000; /* Fallback solid color */
+  color: #FFFFFF; /* Default text color */
+  transition: background-color 0.3s ease, color 0.3s ease;
+  position: fixed; /* Ensure it stays fixed at the top */
+  width: 100%; /* Full width */
+  z-index: 1000; /* Make sure it stays above other elements */
+}
+
+nav a {
+  color: inherit; /* Match the navbar text color */
+  transition: color 0.3s ease;
+}
+.black-footer h1:hover{
+  color: #fef08a;
+  cursor: pointer;
+}
+
+/* .picture{
+  display: ;
+} */
